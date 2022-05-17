@@ -1,0 +1,22 @@
+{
+	"name": "workflow",
+	"version": "1.0.0",
+	"author": "yokkkoso",
+	"scripts": {
+		"build": "rimraf ./dist && tsc && echo Success.",
+		"start": "node ./dist/index.js"
+	},
+	"dependencies": {
+		"axios": "^0.27.2",
+		"dotenv": "^16.0.1",
+		"json5": "^2.2.1"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.34",
+		"discord-api-types": "^0.33.0",
+		"rimraf": "^3.0.2",
+		"tslib": "^2.4.0",
+		"typescript": "^4.6.4"
+	},
+	"packageManager": "yarn@3.2.1"
+}

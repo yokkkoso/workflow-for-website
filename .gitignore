@@ -1,0 +1,14 @@
+# Dev directories
+.idea/
+node_modules/
+
+# Build
+dist/
+
+# Yarn files
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
