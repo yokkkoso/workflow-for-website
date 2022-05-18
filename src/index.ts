@@ -44,7 +44,11 @@ void readFile(join(__dirname, '..', 'guilds.json5'), 'utf-8').then(async file =>
 		await wait(30_000);
 	}
 
-	await writeFile(join(__dirname, '..', 'guilds.json'), JSON.stringify(guildsOutputData, null, '\t'), 'utf8');
+	await writeFile(
+		join(__dirname, '..', 'guilds.json'),
+		JSON.stringify(guildsOutputData.sort((a, b) => b.membersCount - a.membersCount), null, '\t'),
+		'utf8'
+	);
 });
 
 function roundMembersCount (membersCount: number): number {
