@@ -5,6 +5,9 @@ node_modules/
 # Build
 dist/
 
+# Config
+.env
+
 # Yarn files
 .yarn/*
 !.yarn/patches

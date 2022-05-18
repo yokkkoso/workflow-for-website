@@ -1,45 +1,67 @@
 import 'dotenv/config.js';
 
 import axios from 'axios';
-import { parse } from 'json5';
+import type { Snowflake, APIGuildPreview } from 'discord-api-types/v10';
 import { readFile, writeFile } from 'node:fs/promises';
-import { setTimeout as wait } from 'node:timers/promises';
 import { join } from 'node:path';
 import process from 'node:process';
-import type { Snowflake, APIGuildPreview } from 'discord-api-types/v10';
+import { setTimeout as wait } from 'node:timers/promises';
 
-readFile(join(__dirname, '..', 'guildIds.json5'), 'utf-8').then(async file => {
-	const guildIds = parse<Snowflake[]>(file);
-	const guildsData: GuildData[] = [];
+void readFile(join(__dirname, '..', 'guildIds.json5'), 'utf-8').then(async file => {
+	const guildInputData: GuildData[] = JSON.parse(file) as GuildData[];
+	const guildsOutputData: GuildData[] = [];
 
-	for (const guildId of guildIds) {
-		const response = await axios.get<APIGuildPreview>(`https://discord.com/api/v10/guilds/${guildId}/preview`, {
+	for (const guild of guildInputData) {
+		const response = await axios.get<APIGuildPreview>(`https://discord.com/api/v10/guilds/${guild.id}/preview`, {
 				headers: {
-					'Authorization': `Bot ${process.env.BOT_TOKEN}`,
+					'Authorization': `Bot ${process.env.BOT_TOKEN!}`,
 					'Content-Type': 'application/json'
 				}
 			}).catch(() => {});
 
-		if (response?.status !== 200) continue;
+		if (response?.status !== 200) {
+			guildsOutputData.push({
+				id: guild.id,
+				name: guild.name,
+				icon: guild.icon,
+				membersCount: guild.membersCount,
+				inviteURL: guild.inviteURL
+			});
+
+			continue;
+		}
 
 		const responseData = response.data;
 
-		guildsData.push({
+		guildsOutputData.push({
 			id: responseData.id,
 			name: responseData.name,
-			icon: responseData.icon,
-			membersCount: responseData.approximate_member_count
+			icon: convertIconHashToUrl(responseData),
+			membersCount: roundMembersCount(responseData.approximate_member_count),
+			inviteURL: guild.inviteURL
 		});
 
 		await wait(30_000);
 	}
 
-	await writeFile(join(__dirname, '..', 'guilds.json'), JSON.stringify(guildsData), 'utf8');
+	await writeFile(join(__dirname, '..', 'guilds.json'), JSON.stringify(guildsOutputData, null, '\t'), 'utf8');
 });
+
+function roundMembersCount (membersCount: number): number {
+	if (membersCount < 50) return 100;
+	return Math.round(membersCount / 100) * 100;
+}
+
+function convertIconHashToUrl (guild: APIGuildPreview): string {
+	return guild.icon
+		? `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.${guild.icon.startsWith('a_') ? 'gif' : 'png'}`
+		: 'https://cdn.discordapp.com/embed/avatars/0.png';
+}
 
 type GuildData = {
 	id: Snowflake;
 	name: string;
 	icon: string | null;
 	membersCount: number;
+	inviteURL: string;
 };

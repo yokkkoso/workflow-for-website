@@ -1,19 +1,6 @@
 {
+	"extends": "@yokkkoso/ts-config",
 	"compilerOptions": {
-		"allowSyntheticDefaultImports": true,
-		"emitDecoratorMetadata": true,
-		"esModuleInterop": true,
-		"experimentalDecorators": true,
-		"lib": ["ESNext"],
-		"module": "CommonJS",
-		"moduleResolution": "node",
-		"noFallthroughCasesInSwitch": true,
-		"noImplicitReturns": true,
-		"noImplicitOverride": true,
-		"resolveJsonModule": true,
-		"strict": true,
-		"target": "ES2020",
-		"useDefineForClassFields": true,
 		"outDir": "./dist",
 		"importHelpers": true
 	},
