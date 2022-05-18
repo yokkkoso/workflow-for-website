@@ -7,7 +7,7 @@ import { join } from 'node:path';
 import process from 'node:process';
 import { setTimeout as wait } from 'node:timers/promises';
 
-void readFile(join(__dirname, '..', 'guildIds.json5'), 'utf-8').then(async file => {
+void readFile(join(__dirname, '..', 'guilds.json5'), 'utf-8').then(async file => {
 	const guildInputData: GuildData[] = JSON.parse(file) as GuildData[];
 	const guildsOutputData: GuildData[] = [];
 
