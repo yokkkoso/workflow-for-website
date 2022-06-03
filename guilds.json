@@ -3,7 +3,7 @@
 		"id": "856646640329031721",
 		"name": "Elysium",
 		"icon": "https://cdn.discordapp.com/icons/856646640329031721/4fe17c677009b3ab401b6361d418803d.png",
-		"membersCount": 54600,
+		"membersCount": 54700,
 		"inviteURL": "https://discord.gg/elysm"
 	},
 	{
@@ -38,8 +38,15 @@
 		"id": "954361085568381008",
 		"name": "Hikkoshi",
 		"icon": "https://cdn.discordapp.com/icons/954361085568381008/a_fe3a604fdabc95b06a7a48248fe9723c.gif",
-		"membersCount": 5100,
+		"membersCount": 5200,
 		"inviteURL": "https://discord.gg/hikkoshi"
+	},
+	{
+		"id": "464358797549240324",
+		"name": "CARTEL",
+		"icon": "https://cdn.discordapp.com/icons/464358797549240324/bccb2ece0f16a4c6a4000c84065bb45c.png",
+		"membersCount": 2400,
+		"inviteURL": "https://discord.gg/cartell"
 	},
 	{
 		"id": "962056768576430090",
@@ -47,12 +54,5 @@
 		"icon": "https://cdn.discordapp.com/icons/962056768576430090/a_4af5d3361a9a8f042a1b3ce2214e5aee.gif",
 		"membersCount": 2300,
 		"inviteURL": "https://discord.gg/nitroshop"
-	},
-	{
-		"id": "464358797549240324",
-		"name": "CARTEL",
-		"icon": "https://cdn.discordapp.com/icons/464358797549240324/bccb2ece0f16a4c6a4000c84065bb45c.png",
-		"membersCount": 2200,
-		"inviteURL": "https://discord.gg/cartell"
 	}
 ]
