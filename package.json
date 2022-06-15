@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"author": "yokkkoso",
 	"scripts": {
+		"lint": "eslint ./src --fix --ext .ts",
 		"build": "rimraf ./dist && tsc && echo Success.",
 		"start": "node ./dist/index.js"
 	},
