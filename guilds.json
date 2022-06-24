@@ -47,5 +47,19 @@
 		"icon": "https://cdn.discordapp.com/icons/962056768576430090/a_70b97d85a3d79ca8b0048a5273b4e6de.gif",
 		"membersCount": 3000,
 		"inviteURL": "https://discord.gg/nitroshop"
+	},
+	{
+		"id": "986705291380949054",
+		"name": "match",
+		"icon": "https://cdn.discordapp.com/icons/962056768576430090/a_70b97d85a3d79ca8b0048a5273b4e6de.gif",
+		"membersCount": 1000,
+		"inviteURL": "https://discord.gg/might"
+	},
+	{
+		"id": "972590487166935051",
+		"name": "Toru",
+		"icon": "https://cdn.discordapp.com/icons/962056768576430090/a_70b97d85a3d79ca8b0048a5273b4e6de.gif",
+		"membersCount": 1000,
+		"inviteURL": "https://discord.gg/toru"
 	}
 ]
