@@ -28,7 +28,7 @@ jobs:
                 git config --global user.name "John Doe"
                 git config --global user.email "johndoe@yokkkoso.me"
                 git add guilds.json
-                git commit -m ":package: Update guilds"
+                git commit -m ":package: Update guilds" || true
 
             - uses: ad-m/github-push-action@master
               with:
