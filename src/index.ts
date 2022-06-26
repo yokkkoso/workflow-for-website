@@ -24,8 +24,7 @@ void readFile(join(__dirname, '..', 'guilds.json'), 'utf-8').then(async file => 
 				id: guild.id,
 				name: guild.name,
 				icon: guild.icon,
-				membersCount: guild.membersCount,
-				inviteURL: guild.inviteURL
+				membersCount: guild.membersCount
 			});
 
 			await wait(30_000);
@@ -38,8 +37,7 @@ void readFile(join(__dirname, '..', 'guilds.json'), 'utf-8').then(async file => 
 			id: responseData.id,
 			name: responseData.name,
 			icon: convertIconHashToUrl(responseData),
-			membersCount: roundMembersCount(responseData.approximate_member_count),
-			inviteURL: guild.inviteURL
+			membersCount: roundMembersCount(responseData.approximate_member_count)
 		});
 
 		await wait(30_000);
@@ -68,5 +66,4 @@ type GuildData = {
 	name: string;
 	icon: string | null;
 	membersCount: number;
-	inviteURL: string;
 };
