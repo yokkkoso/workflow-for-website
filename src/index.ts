@@ -8,10 +8,10 @@ import process from 'node:process';
 import { setTimeout as wait } from 'node:timers/promises';
 
 void readFile(join(__dirname, '..', 'guilds.json'), 'utf-8').then(async file => {
-	const guildInputData: GuildData[] = JSON.parse(file) as GuildData[];
-	const guildsOutputData: GuildData[] = [];
+	const guildsInput: GuildData[] = JSON.parse(file) as GuildData[];
+	const guildsOutput: GuildData[] = [];
 
-	for (const guild of guildInputData) {
+	for (const guild of guildsInput) {
 		const response = await axios.get<APIGuildPreview>(`https://discord.com/api/v10/guilds/${guild.id}/preview`, {
 				headers: {
 					'Authorization': `Bot ${process.env.BOT_TOKEN!}`,
@@ -20,7 +20,7 @@ void readFile(join(__dirname, '..', 'guilds.json'), 'utf-8').then(async file => 
 			}).catch(() => {});
 
 		if (response?.status !== 200) {
-			guildsOutputData.push({
+			guildsOutput.push({
 				id: guild.id,
 				name: guild.name,
 				icon: guild.icon,
@@ -28,12 +28,13 @@ void readFile(join(__dirname, '..', 'guilds.json'), 'utf-8').then(async file => 
 				inviteURL: guild.inviteURL
 			});
 
+			await wait(30_000);
 			continue;
 		}
 
 		const responseData = response.data;
 
-		guildsOutputData.push({
+		guildsOutput.push({
 			id: responseData.id,
 			name: responseData.name,
 			icon: convertIconHashToUrl(responseData),
@@ -46,7 +47,7 @@ void readFile(join(__dirname, '..', 'guilds.json'), 'utf-8').then(async file => 
 
 	await writeFile(
 		join(__dirname, '..', 'guilds.json'),
-		JSON.stringify(guildsOutputData.sort((a, b) => b.membersCount - a.membersCount), null, '\t'),
+		JSON.stringify(guildsOutput.sort((a, b) => b.membersCount - a.membersCount), null, '\t'),
 		'utf8'
 	);
 });
