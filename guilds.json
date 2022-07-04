@@ -1,11 +1,5 @@
 [
 	{
-		"id": "913145017214857246",
-		"name": "ogla",
-		"icon": "https://cdn.discordapp.com/icons/913145017214857246/70e53e017e0a3c4c2d951f70ed3178b8.png",
-		"membersCount": 204300
-	},
-	{
 		"id": "856646640329031721",
 		"name": "Elysium",
 		"icon": "https://cdn.discordapp.com/icons/856646640329031721/3a3bf9b167dbd795bba5e924b16e76b7.png",
@@ -51,6 +45,12 @@
 		"id": "972590487166935051",
 		"name": "Toru",
 		"icon": "https://cdn.discordapp.com/icons/972590487166935051/a_c48832ce9c386e2bac23abc9d464e915.gif",
+		"membersCount": 1000
+	},
+	{
+		"id": "986705291380949054",
+		"name": "loon",
+		"icon": "https://cdn.discordapp.com/icons/986705291380949054/a_407bcf5a53b70e54e50d3f2c42bbf5cb.png",
 		"membersCount": 1000
 	}
 ]
