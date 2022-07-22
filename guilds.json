@@ -36,27 +36,15 @@
 		"membersCount": 6500
 	},
 	{
-		"id": "962056768576430090",
-		"name": "MM SHOP",
-		"icon": "https://cdn.discordapp.com/icons/962056768576430090/a_70b97d85a3d79ca8b0048a5273b4e6de.gif",
-		"membersCount": 3100
-	},
-	{
 		"id": "996352850051485767",
 		"name": "Orsted shop",
-		"icon": "https://cdn.discordapp.com/icons/996352850051485767/a_c6ee104e9f01fabdfe219a8a022be991.gif?size=4096",
-		"membersCount": 1100
+		"icon": "https://cdn.discordapp.com/icons/996352850051485767/a_c6ee104e9f01fabdfe219a8a022be991.gif",
+		"membersCount": 1300
 	},
 	{
-		"id": "972590487166935051",
-		"name": "Toru",
-		"icon": "https://cdn.discordapp.com/icons/972590487166935051/e27759a3837f7b21ae28616c22e98315.png",
-		"membersCount": 1000
-	},
-	{
-		"id": "986705291380949054",
-		"name": "loon",
-		"icon": "https://cdn.discordapp.com/icons/986705291380949054/a_407bcf5a53b70e54e50d3f2c42bbf5cb.png",
-		"membersCount": 1000
+		"id": "988479118163185715",
+		"name": "Blink",
+		"icon": "https://cdn.discordapp.com/icons/988479118163185715/aad71effe29388a6ffb7acfa9931393d.png",
+		"membersCount": 1200
 	}
 ]
