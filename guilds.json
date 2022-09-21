@@ -3,7 +3,7 @@
 		"id": "856646640329031721",
 		"name": "Elysium",
 		"icon": "https://cdn.discordapp.com/icons/856646640329031721/a_aeec13c75c4397a3252e8d73bfdb4585.gif",
-		"membersCount": 97000
+		"membersCount": 97100
 	},
 	{
 		"id": "870061809099489330",
@@ -36,15 +36,15 @@
 		"membersCount": 8700
 	},
 	{
-		"id": "996352850051485767",
-		"name": "Orsted shop",
-		"icon": "https://cdn.discordapp.com/icons/996352850051485767/a_c6ee104e9f01fabdfe219a8a022be991.gif",
-		"membersCount": 6400
-	},
-	{
 		"id": "999366363715993741",
 		"name": "Aletheia",
 		"icon": "https://cdn.discordapp.com/icons/999366363715993741/a_c67cec07e712e2638efed1d87091ae5f.gif",
+		"membersCount": 6500
+	},
+	{
+		"id": "996352850051485767",
+		"name": "Orsted shop",
+		"icon": "https://cdn.discordapp.com/icons/996352850051485767/a_c6ee104e9f01fabdfe219a8a022be991.gif",
 		"membersCount": 6400
 	},
 	{
