@@ -52,5 +52,11 @@
 		"name": "Blink",
 		"icon": "https://cdn.discordapp.com/icons/988479118163185715/aad71effe29388a6ffb7acfa9931393d.png",
 		"membersCount": 1500
+	},
+	{
+		"id": "1000834852066697307",
+		"name": "Lite",
+		"icon": "https://cdn.discordapp.com/icons/1000834852066697307/a_705c2c6a872d794bbb6358ecf81adba4.gif",
+		"membersCount": 1000
 	}
 ]
