@@ -6,6 +6,12 @@
 		"membersCount": 103500
 	},
 	{
+		"id": "737861570172027000",
+		"name": "Lite",
+		"icon": "https://cdn.discordapp.com/icons/737861570172027000/a_705c2c6a872d794bbb6358ecf81adba4.gif",
+		"membersCount": 77700
+	},
+	{
 		"id": "870061809099489330",
 		"name": "Hanami",
 		"icon": "https://cdn.discordapp.com/icons/870061809099489330/a_55437aeedfd6cae7742f7f88e34aac8a.gif",
@@ -22,12 +28,6 @@
 		"name": "Futurama",
 		"icon": "https://cdn.discordapp.com/icons/531970658633252864/a_65bf53fd0e7c96e592e5155c3f759bec.gif",
 		"membersCount": 40400
-	},
-	{
-		"id": "999609134922092626",
-		"name": "ZXC",
-		"icon": "https://cdn.discordapp.com/icons/999609134922092626/a_1efd39757ad4fd1be20cdea5dbb5da05.gif",
-		"membersCount": 19600
 	},
 	{
 		"id": "954361085568381008",
@@ -52,11 +52,5 @@
 		"name": "Blink",
 		"icon": "https://cdn.discordapp.com/icons/988479118163185715/aad71effe29388a6ffb7acfa9931393d.png",
 		"membersCount": 1500
-	},
-	{
-		"id": "1000834852066697307",
-		"name": "Lite",
-		"icon": "https://cdn.discordapp.com/icons/1000834852066697307/a_705c2c6a872d794bbb6358ecf81adba4.gif",
-		"membersCount": 1000
 	}
 ]
