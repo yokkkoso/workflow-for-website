@@ -34,5 +34,17 @@
 		"name": "Darkness",
 		"icon": "https://cdn.discordapp.com/icons/934073000117026866/a_5b6ca64bb82086c1f705a72edb41ac44.gif",
 		"membersCount": 68200
+	},
+	{
+		"id": "660183032333860864",
+		"name": "Rastafari",
+		"icon": "https://cdn.discordapp.com/icons/660183032333860864/10fc60b18e1eccdffdecf507ff507bac.png",
+		"membersCount": 61600
+	},
+	{
+		"id": "926705489616728074",
+		"name": "SoliSaid",
+		"icon": "https://cdn.discordapp.com/icons/926705489616728074/a_7051360b8d35883e5b734bf54fc3ba63.gif",
+		"membersCount": 42300
 	}
 ]
