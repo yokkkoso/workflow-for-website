@@ -6,12 +6,6 @@
 		"membersCount": 208000
 	},
 	{
-		"id": "940333259651424297",
-		"name": "Hanami",
-		"icon": "https://cdn.discordapp.com/icons/870061809099489330/a_437ba0ea63a0679032894ccd16739091.gif",
-		"membersCount": 108700
-	},
-	{
 		"id": "894663985650081864",
 		"name": "Hatory",
 		"icon": "https://cdn.discordapp.com/icons/894663985650081864/3fa32c7cb7c681d10f78526a6b391afb.png",
@@ -52,5 +46,11 @@
 		"name": "Stockholm",
 		"icon": "https://cdn.discordapp.com/icons/935695524831567972/a_8ce2b2922860520acc1ef526db49feac.gif",
 		"membersCount": 41200
+	},
+	{
+		"id": "940333259651424297",
+		"name": "Aletheia",
+		"icon": "https://cdn.discordapp.com/icons/940333259651424297/a_63c71096aa1a0d56aba7440f2bc61f78.gif",
+		"membersCount": 10000
 	}
 ]
