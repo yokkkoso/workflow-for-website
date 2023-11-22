@@ -57,7 +57,7 @@ function roundMembersCount (membersCount: number): number {
 
 function convertIconHashToUrl (guild: APIGuildPreview): string {
 	return guild.icon
-		? `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.${guild.icon.startsWith('a_') ? 'gif' : 'png'}`
+		? `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.${guild.icon.startsWith('a_') ? 'gif' : 'png'}?size=128`
 		: 'https://cdn.discordapp.com/embed/avatars/0.png';
 }
 
