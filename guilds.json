@@ -3,13 +3,13 @@
 		"id": "856646640329031721",
 		"name": "Elysium",
 		"icon": "https://cdn.discordapp.com/icons/856646640329031721/a_d44c9599c1a8a4315af68f2031f5b7c6.gif?size=128",
-		"membersCount": 305300
+		"membersCount": 305100
 	},
 	{
 		"id": "894663985650081864",
 		"name": "Hatory",
 		"icon": "https://cdn.discordapp.com/icons/894663985650081864/c17c35cf2e75f1eeb0507925a6282948.png?size=128",
-		"membersCount": 157300
+		"membersCount": 157400
 	},
 	{
 		"id": "531970658633252864",
@@ -21,13 +21,13 @@
 		"id": "934073000117026866",
 		"name": "Darkness",
 		"icon": "https://cdn.discordapp.com/icons/934073000117026866/a_23718207ea5877445eaffb4e75a9c4ec.gif?size=128",
-		"membersCount": 113400
+		"membersCount": 113600
 	},
 	{
 		"id": "926705489616728074",
 		"name": "Solisaid",
 		"icon": "https://cdn.discordapp.com/icons/926705489616728074/a_a85f41fd9063b990c08adc341b9b44a2.gif?size=128",
-		"membersCount": 87900
+		"membersCount": 88000
 	},
 	{
 		"id": "796785634144288849",
@@ -39,7 +39,7 @@
 		"id": "935695524831567972",
 		"name": "Stockholm",
 		"icon": "https://cdn.discordapp.com/icons/935695524831567972/d3d5e189a9b13fd6e72c23477d37878f.png?size=128",
-		"membersCount": 76100
+		"membersCount": 76200
 	},
 	{
 		"id": "532331179760812033",
@@ -51,6 +51,6 @@
 		"id": "890304318643785769",
 		"name": "SweetNess",
 		"icon": "https://cdn.discordapp.com/icons/890304318643785769/a_6f2c57e570ec90669749a5d5a3f27dc0.gif?size=128",
-		"membersCount": 27500
+		"membersCount": 27400
 	}
 ]
