@@ -27,7 +27,7 @@ void readFile(join(__dirname, '..', 'guilds.json'), 'utf-8').then(async file => 
 				membersCount: guild.membersCount
 			});
 
-			await wait(30_000);
+			await wait(5_000);
 			continue;
 		}
 
